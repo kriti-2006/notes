@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family:'Poppins','sans-serif';
+  }
+  body{
+      height:100vh;
+      background-image:url("Untitled design_20240918_224837_0000.png");
+      background-position: center;
+      background-size: cover;
+  
+  }
+  header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+  header .navbar{
+      display: flex;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      justify-content:space-between;
+  }
+  .navbar .logo{
+      font-size: 2.1rem;
+      font-weight: 600;
+  }
+  .navbar .menu-links{
+      display:flex;
+      font-weight: 40px;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+  }
+  .navbar a{
+     color: #fff;
+     display:block;
+     padding:8px;
+     text-decoration: none;
+     transition: 0.2s ease;
+  }
+  .navbar .logo.span{
+      color: #C06B3E;
+  }
+  .navbar a:hover{
+      color: #C06B3E;
+  }
+  .dropdown {
+      position: relative;
+      display: inline-block;
+  }
+  
+  .dropbtn {
+      background-color: transparent;
+      color: white;
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .dropbtn:hover {
+      /* background-color: #0056b3; */
+      transform: scale(1.05);
+  }
+  
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+      z-index: 1; 
+  }
+  
+  
+  .dropdown-content a {
+      color: #333; 
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      border-bottom: 1px solid #f4f4f4; 
+  }
+  .dropdown-content a:last-child {
+      border-bottom: none;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: #f4f4f4;
+      /* color: #007BFF;  */
+  }
+  
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .contact-card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #5cb85c;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #4cae4c;
+    }
+  </style>
+
+  <body>
+    <header>
+      <nav class="navbar">
+          <a href="#" class="logo">Notes<span>.</a>
+          <ul class="menu-links">
+             <li><a href="index.html">Home</a></li>
+             <div class="dropdown">
+              <button class="dropbtn">Notes</button>
+              <div class="dropdown-content">
+                <a href="#">1st year</a>
+                <a href="notess.html">2nd year</a>
+                <a href="#">3rd year</a>
+              </div>
+            </div>
+             <li><a href="about.html">About us</a></li>
+             <li><a href="contact.html">contact us</a></li>
+             <li><a href="login.html">Login/sinup</a></li>
+          </ul>
+      </nav>
+  </header>
+    <div class="contact-card">
+      <h2>Contact Us</h2>
+
+      <form action="https://formspree.io/f/xeoorjjz" method="POST">
+        <label>
+          Your email:
+          <input type="email" name="email" />
+        </label>
+        <label>
+          Your message:
+          <textarea name="message"></textarea>
+        </label>
+        <!-- your other form fields go here -->
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <script src="newscript.js"></script>
+  </body>
+</html>

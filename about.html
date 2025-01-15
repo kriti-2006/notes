@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Mini Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:'Poppins','sans-serif';
+    }
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+        margin-top: 80px;
+        background-color: #f4f4f4;
+    }
+    
+    header{
+        background-image:url("images (1).jpg");
+        position:fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+      }
+      header .navbar{
+          display: flex;
+          align-items: center;
+          max-width: 1200px;
+          margin: 0 auto;
+          justify-content:space-between;
+      }
+      .navbar .logo{
+          font-size: 2.1rem;
+          font-weight: 600;
+      }
+      .navbar .menu-links{
+          display:flex;
+          font-weight: 40px;
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+      }
+      .navbar a{
+         color: #fff;
+         display:block;
+         padding:8px;
+         text-decoration: none;
+         transition: 0.2s ease;
+      }
+      .navbar .logo.span{
+          color: #C06B3E;
+      }
+      .navbar a:hover{
+          color: #C06B3E;
+      }
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0 15px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 15px;
+        border-radius: 4px;
+        transition: background 0.3s;
+    }
+    
+    nav ul li a:hover {
+        background: #555;
+    }
+    
+    main {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    h1, h2 {
+        color: #333;
+    }
+    
+    #cards-container {
+        /* background-color: red; */
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+        position: relative;
+        z-index: 10;
+      }
+      .card {
+        height: 80%;
+        width: 24%;
+        background-color: blue;
+        border-radius: 20px;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        transition: all ease 0.6s;
+      }
+      #card1 {
+        background-image: url("Screenshot_20241004_175239_Instagram.jpg");
+      }
+      #card2 {
+        background-image: url("Screenshot_20241004_171713_Instagram.jpg");}
+      #card3 {
+        background-image: url("Screenshot_20241004_171651_Instagram.jpg");
+    }
+    .overlay {
+        height: 100%;
+        width: 100%;
+        background-color: #95c11e;
+        padding: 30px;
+        padding-top: 160px;
+        opacity: 0;
+        transition: all ease 0.6s;
+      }
+      .overlay h4 {
+        color: #000;
+        font-size: 40px;
+        text-transform: uppercase;
+        white-space: nowrap;
+        margin-bottom: 20px;
+        font-weight: 800;
+      }
+      .overlay p {
+        color: #000;
+        font-size: 18px;
+      }
+      .card:hover .overlay {
+        opacity: 1;
+      }
+      .card:hover {
+        transform: rotate3d(-1, 1, 0, 20deg);
+      }
+      footer {
+        text-align: center;
+        padding: 10px 0;
+        background-image:url("Untitled design_20240918_224837_0000.png");
+        color: white;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Notes<span>.</a>
+            <ul class="menu-links">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="notess.html">Notes</a></li>
+               <li><a href="about.html">About us</a></li>
+               <li><a href="contact.html">contact us</a></li>
+               <li><a href="login.html">Login/sinup</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+    
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a group of B.Tech 2nd year students from AIMT College, working on this mini project as part of our curriculum.</p>
+        </section>
+
+        <div id="cards-container">
+            <div class="card" id="card1">
+              <div class="overlay">
+                <h4>Kriti Tripathi</h4>
+              </div>
+            </div>
+            <div class="card" id="card2">
+              <div class="overlay">
+                <h4>Jyoti Singh</h4>
+              </div>
+            </div>
+            <div class="card" id="card3">
+              <div class="overlay">
+                <h4>Anjani Kumari</h4>
+              </div>
+            </div>
+          </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AIMT College. All rights reserved.</p>
+    </footer>
+</body>
+</html>
